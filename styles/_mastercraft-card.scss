@@ -1,11 +1,9 @@
 .main-cards {
     position: relative;
+    top: -60px;
 }
 
 .mastercraft-card {
-    position: relative;
-    top: -60px;
-
     h1 {
         font-size: clamp(1.3em, 2vw, 1.8em);
         width: 80%;

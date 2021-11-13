@@ -104,10 +104,6 @@ ul li a, ol li a {
 
 .main-cards {
   position: relative;
-}
-
-.mastercraft-card {
-  position: relative;
   top: -60px;
 }
 
@@ -266,6 +262,6 @@ body {
   text-align: center;
   width: 90%;
   max-width: 730px;
-  margin: auto;
+  margin: 1em auto;
 }
 /*# sourceMappingURL=styles.css.map */
