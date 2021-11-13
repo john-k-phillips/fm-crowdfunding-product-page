@@ -173,6 +173,42 @@ ul li a, ol li a {
   display: none;
 }
 
+@media screen and (min-width: 1440px) {
+  .mastercraft-card h1, .mastercraft-card p {
+    max-width: 100%;
+  }
+  .mastercraft-card .mastercraft-interactive-btns {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 100%;
+  }
+  .mastercraft-card .mastercraft-interactive-btns .bookmark-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    left: 50px;
+    z-index: 1;
+  }
+  .mastercraft-card .mastercraft-interactive-btns .bookmark-btn span {
+    position: relative;
+    left: -50px;
+    display: inline;
+    color: #7a7a7a;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 1.2em;
+    border-radius: 5em;
+    padding-left: 4em;
+    background-color: #F4F4F4;
+    z-index: -1;
+  }
+}
+
 body {
   background-color: #FAFAFA;
   font-size: 16px;
