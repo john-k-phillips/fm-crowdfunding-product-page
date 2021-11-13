@@ -1,0 +1,48 @@
+.main-cards {
+    position: relative;
+}
+
+.mastercraft-card {
+    @include createCard(0.5em, #FFF);
+    @include createFlex(column, center, center, center);
+
+    width: 90%;
+    max-width: 730px;
+    margin: auto;
+    position: relative;
+    top: -60px;
+
+    h1 {
+        font-size: clamp(1.3em, 2vw, 1.8em);
+        width: 80%;
+        max-width: 200px;
+    }
+
+    p {
+        color: $clr-dark-gray;
+        margin-top: 0.5em;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .mastercraft-logo {
+        max-width: 100%;
+        position: relative;
+        top: -25px;
+    }
+
+    .mastercraft-interactive-btns {
+        @include createFlex(row, space-around, center);
+
+        width: 85%;
+        max-width: 400px;
+        margin-top: 2em;
+        margin-bottom: 2em;
+
+        .bookmark-btn {
+            span {
+                display: none;
+            }
+        }
+    }
+}
