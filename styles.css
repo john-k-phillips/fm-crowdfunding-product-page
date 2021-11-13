@@ -263,5 +263,6 @@ body {
   width: 90%;
   max-width: 730px;
   margin: 1em auto;
+  border: 1px solid rgba(150, 150, 150, 0.1);
 }
 /*# sourceMappingURL=styles.css.map */
