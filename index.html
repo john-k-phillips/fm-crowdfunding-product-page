@@ -18,7 +18,11 @@
       <nav class="header-nav">
         <button 
           class="hamburger-btn"
-          onclick="toggleMenu()">
+          onclick="toggleMenu()"
+          aria-label="toggle navigation menu"
+          aria-expanded="false"
+          onkeypress="toggleNav()"
+        >
           <img class="hamburger-icon" src="./images/icon-hamburger.svg" alt="" aria-hidden="true">
         </button>
         <div class="nav-list">
