@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <script src="./app.js" defer></script>
+
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Crowdfunding product page</title>
 </head>
@@ -14,8 +16,10 @@
     <div class="header-wrapper">
       <img class="logo" src="./images/logo.svg" alt="crowdfunding" aria-hidden="true">
       <nav class="header-nav">
-        <button class="hamburger">
-          <img src="./images/icon-hamburger.svg" alt="" aria-hidden="true">
+        <button 
+          class="hamburger-btn"
+          onclick="toggleMenu()">
+          <img class="hamburger-icon" src="./images/icon-hamburger.svg" alt="" aria-hidden="true">
         </button>
         <div class="nav-list">
           <div class="glass-effect"></div>
