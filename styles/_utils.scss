@@ -36,3 +36,11 @@ $hr-light-border: 1px solid rgba(150, 150, 150, 0.35);
     border-radius: $radius;
     background-color: $bgColor;
 }
+
+@mixin createFlex($direction, $justify: flex-start, $align: flex-start, $textAlign: left) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    text-align: $textAlign;
+}
