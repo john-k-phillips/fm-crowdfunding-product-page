@@ -21,13 +21,19 @@
 // NAVIGATION LIST
 .nav-list {
     .dropdown-list {
+        @include createCard(0.5em, #FFF);
+
+        display: none;
+        opacity: 0;
+
         position: absolute;
         top: 75px;
         right: 18px;
 
         width: 90%;
         max-width: 350px;
-        @include createCard(0.5em, #FFF);
+        
+        transition: opacity 0.5s ease;
         li {
             padding: 1em;
             border-bottom: $hr-light-border;

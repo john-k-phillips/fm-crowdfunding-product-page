@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
     font-family: 'Commissioner', sans-serif;
 }
 
@@ -30,11 +31,8 @@ $clr-dark-cyan: hsl(176, 72%, 28%);
 // OTHER VARIABLES
 $hr-light-border: 1px solid rgba(150, 150, 150, 0.35);
 
-
-
 // MIXINS
-@mixin createCard($radius, $shadow, $bgColor) {
+@mixin createCard($radius, $bgColor) {
     border-radius: $radius;
-    box-shadow: $shadow;
     background-color: $bgColor;
 }
