@@ -106,7 +106,7 @@ ul li a, ol li a {
   position: relative;
 }
 
-.mastercraft-card {
+.base-card-style {
   border-radius: 0.5em;
   background-color: #FFF;
   display: -webkit-box;
@@ -125,6 +125,9 @@ ul li a, ol li a {
   text-align: center;
   width: 90%;
   max-width: 730px;
+}
+
+.mastercraft-card {
   margin: auto;
   position: relative;
   top: -60px;

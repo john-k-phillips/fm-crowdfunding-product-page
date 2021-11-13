@@ -2,12 +2,15 @@
     position: relative;
 }
 
-.mastercraft-card {
+.base-card-style {
     @include createCard(0.5em, #FFF);
     @include createFlex(column, center, center, center);
 
     width: 90%;
     max-width: 730px;
+}
+
+.mastercraft-card {
     margin: auto;
     position: relative;
     top: -60px;
