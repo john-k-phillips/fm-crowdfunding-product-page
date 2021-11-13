@@ -22,7 +22,7 @@ ul li a, ol li a {
 }
 
 .header {
-  height: 220px;
+  height: 300px;
   background: url("./images/image-hero-mobile.jpg");
   background-size: cover;
 }
@@ -102,7 +102,88 @@ ul li a, ol li a {
   }
 }
 
+.main-cards {
+  position: relative;
+}
+
+.mastercraft-card {
+  border-radius: 0.5em;
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 90%;
+  max-width: 730px;
+  margin: auto;
+  position: relative;
+  top: -60px;
+}
+
+.mastercraft-card h1 {
+  font-size: clamp(1.3em, 2vw, 1.8em);
+  width: 80%;
+  max-width: 200px;
+}
+
+.mastercraft-card p {
+  color: #7a7a7a;
+  margin-top: 0.5em;
+  width: 90%;
+  max-width: 300px;
+}
+
+.mastercraft-card .mastercraft-logo {
+  max-width: 100%;
+  position: relative;
+  top: -25px;
+}
+
+.mastercraft-card .mastercraft-interactive-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: left;
+  width: 85%;
+  max-width: 400px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.mastercraft-card .mastercraft-interactive-btns .bookmark-btn span {
+  display: none;
+}
+
 body {
+  background-color: #FAFAFA;
+  font-size: 16px;
+}
+
+.main-btn {
+  background-color: #3cb4ac;
+  padding: 1.2em 2.5em;
+  border-radius: 10em;
+  font-weight: 700;
+  color: #FFF;
   font-size: 16px;
 }
 /*# sourceMappingURL=styles.css.map */
