@@ -28,12 +28,15 @@ ul li a, ol li a {
 }
 
 .header-wrapper {
-  padding: 1.5em 1em;
-  max-width: 768px;
+  padding: clamp(1.5em, 5vw, 2.5em) 1em;
+  max-width: 1150px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-wrapper .logo {
@@ -76,6 +79,26 @@ ul li a, ol li a {
     background: url("./images/image-hero-desktop.jpg");
     background-size: cover;
     height: 400px;
+  }
+  .hamburger-btn {
+    display: none;
+  }
+  .nav-list .dropdown-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    background-color: transparent;
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+  }
+  .nav-list .dropdown-list li {
+    border: none;
+  }
+  .nav-list .dropdown-list li a {
+    color: #FFF;
   }
 }
 

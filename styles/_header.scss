@@ -5,10 +5,11 @@
 }
 
 .header-wrapper {
-    padding: 1.5em 1em;
-    max-width: 768px;
+    padding:  clamp(1.5em, 5vw, 2.5em) 1em;
+    max-width: 1150px;
     margin: auto;
     display: flex;
+    align-items: center;
     .logo {
         margin-right: auto;
     }
@@ -52,5 +53,29 @@
         background: url('./images/image-hero-desktop.jpg');
         background-size: cover;
         height: 400px;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .nav-list {
+        .dropdown-list {
+            display: flex;
+            opacity: 1;
+            background-color: transparent;
+            
+            position: relative;
+            top: auto;
+            right: auto;
+
+            width: 100%;
+            li {
+                border: none;
+                a {
+                    color: #FFF;
+                }
+            }
+        }
     }
 }
