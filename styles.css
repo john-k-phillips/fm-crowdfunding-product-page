@@ -106,29 +106,7 @@ ul li a, ol li a {
   position: relative;
 }
 
-.base-card-style {
-  border-radius: 0.5em;
-  background-color: #FFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  width: 90%;
-  max-width: 730px;
-}
-
 .mastercraft-card {
-  margin: auto;
   position: relative;
   top: -60px;
 }
@@ -212,6 +190,49 @@ ul li a, ol li a {
   }
 }
 
+.pledge-total {
+  padding: 2em;
+}
+
+.stats .total-amount::after, .stats .backers::after {
+  content: '';
+  height: 1px;
+  background-color: #7a7a7a;
+  opacity: 0.5;
+  width: 75%;
+  margin: 1.5em auto;
+  display: block;
+}
+
+.stats h2 {
+  font-size: 32px;
+  margin-bottom: 0.2em;
+}
+
+.stats span {
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+.progress-bar-wrapper {
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  border-radius: 2em;
+  background-color: #F4F4F4;
+}
+
+.progress-bar .progress-content {
+  width: 85%;
+  background-color: #3cb4ac;
+  height: 12px;
+  border-radius: 2em;
+}
+
 body {
   background-color: #FAFAFA;
   font-size: 16px;
@@ -224,5 +245,27 @@ body {
   font-weight: 700;
   color: #FFF;
   font-size: 16px;
+}
+
+.base-card-style {
+  border-radius: 0.5em;
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 90%;
+  max-width: 730px;
+  margin: auto;
 }
 /*# sourceMappingURL=styles.css.map */

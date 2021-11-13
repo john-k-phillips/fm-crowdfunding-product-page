@@ -1,0 +1,43 @@
+.pledge-total {
+    padding: 2em;
+}
+
+.stats {
+    .total-amount, .backers {
+        &::after {
+            content: '';
+            height: 1px;
+            background-color: $clr-dark-gray;
+            opacity: 0.5;
+            width: 75%;
+            margin: 1.5em auto;
+            display: block;
+        }
+    }
+    h2 {
+        font-size: 32px;
+        margin-bottom: 0.2em;
+    }
+    span {
+        font-size: 14px;
+        color: $clr-dark-gray;
+    }
+}
+
+.progress-bar-wrapper {
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    border-radius: 2em;
+    background-color: #F4F4F4;
+    .progress-content {
+        width: 85%;
+        background-color: $clr-moderate-cyan;
+        height: 12px;
+        border-radius: 2em;
+    }
+}
