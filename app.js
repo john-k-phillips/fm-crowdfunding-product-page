@@ -1,5 +1,8 @@
 let isOpen = true;
 let isBookmarked = true;
+let isModalOpen = true;
+
+const glassEffect = document.querySelector('.glass-effect');
 
 // NAVIGATION
 const toggleMenu = () => {
@@ -27,9 +30,9 @@ const toggleMenu = () => {
 
 // MASTERCRAFT SECTION
 const toggleBookmark = () => {
-    let bookmarkBtn = document.querySelector('.bookmark-btn');
-    let bookmarkText = document.querySelector('.bookmark-value');
-    let bookmarkImg = document.querySelector('.bookmark-img');
+    const bookmarkBtn = document.querySelector('.bookmark-btn');
+    const bookmarkText = document.querySelector('.bookmark-value');
+    const bookmarkImg = document.querySelector('.bookmark-img');
 
     if (isBookmarked) {
         bookmarkBtn.ariaChecked = true;
@@ -43,5 +46,32 @@ const toggleBookmark = () => {
         bookmarkText.style.color = "#7A7A7A";
         bookmarkImg.src = "./images/icon-bookmark.svg";
         isBookmarked = !isBookmarked;
+    }
+}
+
+
+const openBackModal = () => {
+    const modal = document.querySelector('.back-project-modal');
+    if (isModalOpen) {
+        modal.style.display = 'block';
+        glassEffect.style.display = 'block';
+        setTimeout(() => {
+            modal.style.opacity = 1;
+            glassEffect.style.opacity = 1;
+        }, 200);
+        isModalOpen = !isModalOpen;
+    }
+}
+
+const closeBackModal = () => {
+    const modal = document.querySelector('.back-project-modal');
+    if (!isModalOpen) {
+        modal.style.opacity = 0;
+        glassEffect.style.opacity = 0;
+        setTimeout(() => {
+            modal.style.display = 'none';
+            glassEffect.style.display = 'none';
+        }, 200);
+        isModalOpen = !isModalOpen;
     }
 }

@@ -57,7 +57,12 @@
         A beautiful & handcrafted monitor stand to reduce neck and eye strain.
       </p>
       <div class="mastercraft-interactive-btns">
-        <button class="main-btn">
+        <button 
+          class="main-btn"
+          onclick="openBackModal()"
+          onkeypress="openBackModal()"
+          aria-label="back this project"
+          >
           Back this project
         </button>
         <button 
@@ -169,8 +174,8 @@
             <button
               class="modal-close-btn"
               aria-label="close modal"
-              onclick=""
-              onkeypress=""
+              onclick="closeBackModal()"
+              onkeypress="closeBackModal()"
             >
               <img src="./images/icon-close-modal.svg" alt="" aria-hidden="true">
             </button>
