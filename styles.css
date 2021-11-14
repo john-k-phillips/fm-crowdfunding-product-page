@@ -289,16 +289,6 @@ ul li a, ol li a {
   margin-bottom: 1.5em;
 }
 
-.pledge-cards .pledge-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .pledge-cards .pledge-title h3 {
   font-size: clamp(0.9em, 2vw, 1.1em);
 }
@@ -308,6 +298,10 @@ ul li a, ol li a {
   font-weight: 500;
   margin-top: 0.3em;
   font-size: clamp(0.9em, 2vw, 1em);
+}
+
+.pledge-cards p {
+  font-size: clamp(14.5px, 2vw, 16.5px);
 }
 
 .pledge-cards .pledge-select {
@@ -333,6 +327,31 @@ ul li a, ol li a {
 
 .pledge-cards .pledge-select button {
   margin-top: 1.5em;
+}
+
+@media screen and (min-width: 1440px) {
+  .pledge-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pledge-select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 body {
