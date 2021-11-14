@@ -341,20 +341,6 @@ ul li a, ol li a {
   margin-top: 1.5em;
 }
 
-.disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.disabled .main-btn {
-  background-color: #7a7a7a;
-  cursor: not-allowed;
-}
-
-.disabled .main-btn:hover {
-  background-color: #7a7a7a;
-}
-
 @media screen and (min-width: 1440px) {
   .pledge-title {
     display: -webkit-box;
@@ -433,6 +419,10 @@ ul li a, ol li a {
   border-radius: 0.5em;
   border: 1px solid rgba(150, 150, 150, 0.5);
   margin-top: 1.5em;
+}
+
+.radio-card-wrapper:hover h3 {
+  color: #3cb4ac;
 }
 
 .radio-card-wrapper input {
@@ -528,6 +518,12 @@ ul li a, ol li a {
   font-weight: 400;
 }
 
+.radio-card-wrapper,
+.form-control,
+.radio-header {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1440px) {
   .radio-card-wrapper {
     position: relative;
@@ -592,5 +588,23 @@ body {
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.disabled .main-btn {
+  background-color: #7a7a7a;
+  cursor: not-allowed;
+}
+
+.disabled .main-btn:hover {
+  background-color: #7a7a7a;
+}
+
+.disabled:hover .pledge-title h3 {
+  color: #000;
 }
 /*# sourceMappingURL=styles.css.map */
