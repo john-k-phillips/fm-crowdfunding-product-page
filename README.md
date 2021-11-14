@@ -64,10 +64,14 @@ Your users should be able to:
 <h3>Continued Development</h3>
   <p>
     I had left this project unfinished purposely. I intend on revisting to see whether I can fully understand what I was doing, how I was doing it and why.
+    <br>
+    <br>
     I am hoping to pick up even more valueable skills from this project by revisting and practicing my ability to read the code and continue a project months later.
-
+    <br>
+    <br>
     When I revisit this project; I will update this section just below.
-
+     <br>
+     <br>
     REVISIT:
   </p>
   
