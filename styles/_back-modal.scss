@@ -1,0 +1,19 @@
+.back-project-modal {
+    position: absolute;
+    top: -200px;
+    width: 100%;
+
+    z-index: 3;
+}
+
+
+.back-project-wrapper {
+    width: 90%;
+    max-width: 730px;
+    margin: auto;
+    .back-project-card {
+        @include createCard(0.5em, #FFF);
+        padding: 1.5em;
+        margin: 5em 0em;
+    }
+}
