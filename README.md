@@ -69,7 +69,6 @@ Your users should be able to:
     When I revisit this project; I will update this section just below.
 
     REVISIT:
-     
   </p>
   
 <!--  Thank you for taking the time to review my projects!  -->
