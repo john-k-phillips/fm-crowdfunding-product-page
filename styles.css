@@ -260,6 +260,79 @@ ul li a, ol li a {
 
 .about-project {
   text-align: left;
+  padding: clamp(1.5em, 5vw, 2.5em);
+}
+
+.about-project .about-header {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.about-project p {
+  font-size: clamp(0.9em, 2vw, 1em);
+  color: #7a7a7a;
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+
+.pledge-cards {
+  margin-top: 1.5em;
+}
+
+.pledge-cards .pledge-card {
+  border-radius: 0.5em;
+  background-color: #FFF;
+  border: 2px solid rgba(150, 150, 150, 0.2);
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.pledge-cards .pledge-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pledge-cards .pledge-title h3 {
+  font-size: clamp(0.9em, 2vw, 1.1em);
+}
+
+.pledge-cards .pledge-title .cyan-accent {
+  color: #3cb4ac;
+  font-weight: 500;
+  margin-top: 0.3em;
+  font-size: clamp(0.9em, 2vw, 1em);
+}
+
+.pledge-cards .pledge-select {
+  margin-top: 1em;
+}
+
+.pledge-cards .pledge-select h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32px;
+}
+
+.pledge-cards .pledge-select h4 span {
+  margin-left: 0.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+.pledge-cards .pledge-select button {
+  margin-top: 1.5em;
 }
 
 body {

@@ -1,3 +1,56 @@
 .about-project {
     text-align: left;
+    padding: clamp(1.5em, 5vw, 2.5em);
+    .about-header {
+        align-self: flex-start;
+        font-size: 1em;
+        margin-top: 1em;
+    }
+    p {
+        font-size: clamp(0.9em, 2vw, 1em);
+        color: $clr-dark-gray;
+        line-height: 1.5em;
+        margin-top: 1em;
+    }
+}
+
+.pledge-cards {
+    margin-top: 1.5em;
+    .pledge-card {
+        @include createCard(0.5em, #FFF);
+        border: 2px solid rgba(150, 150, 150, 0.2);
+        padding: 1.5em;
+        margin-bottom: 1.5em;
+    }
+    .pledge-title {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            font-size: clamp(0.9em, 2vw, 1.1em);
+        }
+        .cyan-accent {
+            color: $clr-moderate-cyan;
+            font-weight: 500;
+            margin-top: 0.3em;
+            font-size: clamp(0.9em, 2vw, 1em);
+        }
+    }
+    .pledge-select {
+        margin-top: 1em;
+        h4 {
+            display: flex;
+            font-size: 32px;
+            span {
+                margin-left: 0.5em;
+                align-self: center;
+
+                font-size: 15px;
+                font-weight: 400;
+                color: $clr-dark-gray;
+            }
+        }
+        button {
+            margin-top: 1.5em;
+        }
+    }
 }
