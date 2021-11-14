@@ -15,18 +15,18 @@
 .back-project-card {
     @include createCard(0.5em, #FFF);
 
-    padding: 1.5em;
+    padding: clamp(1.5em, 2.5vw, 2em);
     margin: 5em 0em;
 
     text-align: left;
     .back-project-title-wrapper {
         @include createFlex(row, space-between, center);
         h2 {
-            font-size: 18px;
+            font-size: clamp(18px, 2vw, 24px);
         }
     }
     .back-project-about {
-        font-size: 14px;
+        font-size: clamp(14px, 2vw, 17px);
         color: $clr-dark-gray;
         line-height: 1.5em;
 

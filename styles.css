@@ -396,7 +396,7 @@ ul li a, ol li a {
 .back-project-card {
   border-radius: 0.5em;
   background-color: #FFF;
-  padding: 1.5em;
+  padding: clamp(1.5em, 2.5vw, 2em);
   margin: 5em 0em;
   text-align: left;
 }
@@ -418,11 +418,11 @@ ul li a, ol li a {
 }
 
 .back-project-card .back-project-title-wrapper h2 {
-  font-size: 18px;
+  font-size: clamp(18px, 2vw, 24px);
 }
 
 .back-project-card .back-project-about {
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 17px);
   color: #7a7a7a;
   line-height: 1.5em;
   margin-top: 1em;
@@ -487,7 +487,7 @@ ul li a, ol li a {
 }
 
 .radio-card-wrapper .radio-header h3 {
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 18px);
 }
 
 .radio-card-wrapper .radio-header .pledge-title span {
@@ -497,7 +497,7 @@ ul li a, ol li a {
 
 .radio-card-wrapper p {
   margin-top: 1.5em;
-  font-size: 14px;
+  font-size: clamp(14px, 2vw, 15px);
   color: #7a7a7a;
   line-height: 1.5em;
 }
@@ -526,6 +526,23 @@ ul li a, ol li a {
   font-size: 14px;
   color: #7a7a7a;
   font-weight: 400;
+}
+
+@media screen and (min-width: 1440px) {
+  .radio-card-wrapper {
+    position: relative;
+  }
+  .radio-card-wrapper p {
+    margin-left: 2.5em;
+  }
+  .radio-card-wrapper .pledge-title {
+    gap: 1em;
+  }
+  .form-control h4 {
+    position: absolute;
+    right: 20px;
+    top: -5px;
+  }
 }
 
 body {

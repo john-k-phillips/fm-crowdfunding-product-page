@@ -27,7 +27,7 @@
         @include createFlex(row, flex-start, center);
         gap: 1em;
         h3 {
-            font-size: 14px;
+            font-size: clamp(14px, 2vw, 18px);
         }
 
         .pledge-title {
@@ -40,7 +40,7 @@
 
     p {
         margin-top: 1.5em;
-        font-size: 14px;
+        font-size: clamp(14px, 2vw, 15px);
         color: $clr-dark-gray;
         line-height: 1.5em;
     }
@@ -59,4 +59,24 @@
         font-weight: 400;
     }
 
+}
+
+@media screen and (min-width: 1440px) {
+    .radio-card-wrapper {
+        position: relative;
+        p {
+            margin-left: 2.5em;
+        }
+        .pledge-title {
+            gap: 1em;
+        }
+    }
+
+    .form-control {
+        h4 {
+            position: absolute;
+            right: 20px;
+            top: -5px;
+        }
+    }
 }
