@@ -19,7 +19,7 @@ body {
 
 .base-card-style {
     @include createCard(0.5em, #FFF);
-    @include createFlex(column, center, center, center);
+    @include createFlex(column, center, center);
 
     width: 90%;
     max-width: 730px;

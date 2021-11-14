@@ -105,6 +105,7 @@ ul li a, ol li a {
 .main-cards {
   position: relative;
   top: -60px;
+  text-align: center;
 }
 
 .mastercraft-card h1 {
@@ -139,7 +140,6 @@ ul li a, ol li a {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-align: left;
   width: 85%;
   max-width: 400px;
   margin-top: 2em;
@@ -188,6 +188,7 @@ ul li a, ol li a {
 
 .pledge-total {
   padding: 2em;
+  text-align: center;
 }
 
 .stats .total-amount::after, .stats .backers::after {
@@ -257,6 +258,10 @@ ul li a, ol li a {
   }
 }
 
+.about-project {
+  text-align: left;
+}
+
 body {
   background-color: #FAFAFA;
   font-size: 16px;
@@ -287,7 +292,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   width: 90%;
   max-width: 730px;
   margin: 1em auto;
