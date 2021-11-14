@@ -62,6 +62,9 @@
     .main-btn {
         background-color: $clr-dark-gray;
         cursor: not-allowed;
+        &:hover {
+            background-color: $clr-dark-gray;
+        }
     }
 }
 

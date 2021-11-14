@@ -15,6 +15,11 @@ body {
     font-weight: 700;
     color: #FFF;
     font-size: 16px;
+
+    cursor: pointer;
+    &:hover {
+        background-color: $clr-dark-cyan;
+    }
 }
 
 .base-card-style {

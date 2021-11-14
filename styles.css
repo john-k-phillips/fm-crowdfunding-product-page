@@ -74,6 +74,10 @@ ul li a, ol li a {
   font-weight: 500;
 }
 
+.nav-list .dropdown-list a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 1440px) {
   .header {
     background: url("./images/image-hero-desktop.jpg");
@@ -146,8 +150,16 @@ ul li a, ol li a {
   margin-bottom: 2em;
 }
 
+.mastercraft-card .mastercraft-interactive-btns .bookmark-btn {
+  cursor: pointer;
+}
+
 .mastercraft-card .mastercraft-interactive-btns .bookmark-btn span {
   display: none;
+}
+
+.mastercraft-card .mastercraft-interactive-btns .bookmark-btn span:hover {
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 1440px) {
@@ -339,6 +351,10 @@ ul li a, ol li a {
   cursor: not-allowed;
 }
 
+.disabled .main-btn:hover {
+  background-color: #7a7a7a;
+}
+
 @media screen and (min-width: 1440px) {
   .pledge-title {
     display: -webkit-box;
@@ -376,6 +392,11 @@ body {
   font-weight: 700;
   color: #FFF;
   font-size: 16px;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background-color: #147b74;
 }
 
 .base-card-style {

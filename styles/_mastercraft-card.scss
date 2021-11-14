@@ -33,8 +33,12 @@
         margin-bottom: 2em;
 
         .bookmark-btn {
+            cursor: pointer;
             span {
                 display: none;
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
     }
