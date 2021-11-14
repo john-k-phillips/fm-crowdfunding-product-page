@@ -66,9 +66,9 @@ Your users should be able to:
     I had left this project unfinished purposely. I intend on revisting to see whether I can fully understand what I was doing, how I was doing it and why.
     I am hoping to pick up even more valueable skills from this project by revisting and practicing my ability to read the code and continue a project months later.
 
-    *When I revisit this project; I will update this section just below.*
+    When I revisit this project; I will update this section just below.
 
-    **REVISIT:**
+    REVISIT:
      
   </p>
   
