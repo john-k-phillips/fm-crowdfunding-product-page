@@ -1,5 +1,5 @@
 .radio-card-wrapper {
-    padding: 1em;
+    padding: 1.6em;
     border-radius: 0.5em;
     border: 1px solid rgba(150, 150, 150, 0.5);
     margin-top: 1.5em;
@@ -22,4 +22,41 @@
             }
         }
     }
+
+    .radio-header {
+        @include createFlex(row, flex-start, center);
+        gap: 1em;
+        h3 {
+            font-size: 14px;
+        }
+
+        .pledge-title {
+            span {
+                color: $clr-moderate-cyan;
+                font-weight: 700;
+            }
+        }
+    }
+
+    p {
+        margin-top: 1.5em;
+        font-size: 14px;
+        color: $clr-dark-gray;
+        line-height: 1.5em;
+    }
+
+    h4 {
+        @include createFlex(row, flex-start, center);
+        font-size: 18px;
+        margin-bottom: 0.2em;
+        gap: 0.5em;
+
+        margin-top: 1.5em;
+    }
+    span {
+        font-size: 14px;
+        color: $clr-dark-gray;
+        font-weight: 400;
+    }
+
 }

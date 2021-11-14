@@ -429,7 +429,7 @@ ul li a, ol li a {
 }
 
 .radio-card-wrapper {
-  padding: 1em;
+  padding: 1.6em;
   border-radius: 0.5em;
   border: 1px solid rgba(150, 150, 150, 0.5);
   margin-top: 1.5em;
@@ -467,6 +467,65 @@ ul li a, ol li a {
   height: 12px;
   border-radius: 50%;
   background-color: #3cb4ac;
+}
+
+.radio-card-wrapper .radio-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1em;
+}
+
+.radio-card-wrapper .radio-header h3 {
+  font-size: 14px;
+}
+
+.radio-card-wrapper .radio-header .pledge-title span {
+  color: #3cb4ac;
+  font-weight: 700;
+}
+
+.radio-card-wrapper p {
+  margin-top: 1.5em;
+  font-size: 14px;
+  color: #7a7a7a;
+  line-height: 1.5em;
+}
+
+.radio-card-wrapper h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 18px;
+  margin-bottom: 0.2em;
+  gap: 0.5em;
+  margin-top: 1.5em;
+}
+
+.radio-card-wrapper span {
+  font-size: 14px;
+  color: #7a7a7a;
+  font-weight: 400;
 }
 
 body {
