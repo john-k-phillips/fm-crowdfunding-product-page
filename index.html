@@ -57,9 +57,15 @@
         <button class="main-btn">
           Back this project
         </button>
-        <button class="bookmark-btn">
-          <img src="./images/icon-bookmark.svg" alt="" aria-hidden="true">
-          <span>Bookmark</span>
+        <button 
+          class="bookmark-btn"
+          onclick="toggleBookmark()"
+          onkeypress="toggleBookmark()"
+          aria-label="bookmark"
+          aria-checked="false"
+        >
+          <img class="bookmark-img" src="./images/icon-bookmark.svg" alt="" aria-hidden="true">
+          <span class="bookmark-value">Bookmark</span>
         </button>
       </div>
     </section>

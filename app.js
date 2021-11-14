@@ -1,5 +1,7 @@
 let isOpen = true;
+let isBookmarked = true;
 
+// NAVIGATION
 const toggleMenu = () => {
     const dropdownList = document.querySelector('.dropdown-list');
     const hamburgerIcon = document.querySelector('.hamburger-icon');
@@ -21,4 +23,25 @@ const toggleMenu = () => {
         }, 200);
     }
     isOpen = !isOpen
+}
+
+// MASTERCRAFT SECTION
+const toggleBookmark = () => {
+    let bookmarkBtn = document.querySelector('.bookmark-btn');
+    let bookmarkText = document.querySelector('.bookmark-value');
+    let bookmarkImg = document.querySelector('.bookmark-img');
+
+    if (isBookmarked) {
+        bookmarkBtn.ariaChecked = true;
+        bookmarkText.innerHTML = 'Bookmarked';
+        bookmarkText.style.color = "#147A73";
+        bookmarkImg.src = "./images/icon-bookmark-green.svg";
+        isBookmarked = !isBookmarked;
+    } else {
+        bookmarkBtn.ariaChecked = false;
+        bookmarkText.innerHTML = 'Bookmark';
+        bookmarkText.style.color = "#7A7A7A";
+        bookmarkImg.src = "./images/icon-bookmark.svg";
+        isBookmarked = !isBookmarked;
+    }
 }
