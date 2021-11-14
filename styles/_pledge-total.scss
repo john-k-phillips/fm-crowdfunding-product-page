@@ -41,3 +41,30 @@
         border-radius: 2em;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .stats {
+        display: flex;
+        justify-content: flex-start;
+        gap: 5em;
+        width: 100%;
+        .total-amount, .backers {
+            position: relative;
+            &::after {
+                display: inline-block;
+                margin-left: 2.2em;
+
+                position: absolute;
+                top: -25%;
+
+                height: 50px;
+                width: 1px;
+            }
+        }
+    }
+    
+    .progress-bar {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+}
