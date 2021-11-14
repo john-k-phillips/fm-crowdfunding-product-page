@@ -6,14 +6,30 @@
     z-index: 3;
 }
 
-
 .back-project-wrapper {
     width: 90%;
     max-width: 730px;
     margin: auto;
-    .back-project-card {
-        @include createCard(0.5em, #FFF);
-        padding: 1.5em;
-        margin: 5em 0em;
+}
+
+.back-project-card {
+    @include createCard(0.5em, #FFF);
+
+    padding: 1.5em;
+    margin: 5em 0em;
+
+    text-align: left;
+    .back-project-title-wrapper {
+        @include createFlex(row, space-between, center);
+        h2 {
+            font-size: 18px;
+        }
+    }
+    .back-project-about {
+        font-size: 14px;
+        color: $clr-dark-gray;
+        line-height: 1.5em;
+
+        margin-top: 1em;
     }
 }
